@@ -19,6 +19,8 @@ steps:
     dockerRegistryEndpoint: 'DockerHub'
     dockerComposeFile: '**/docker-compose.yml'
     action: 'Run a Docker Compose command'
+    qualifyImageNames: true
+    dockerComposeCommand: up -d
 
 - task: CopyFiles@2
   inputs:
