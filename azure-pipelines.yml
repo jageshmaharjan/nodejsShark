@@ -20,7 +20,7 @@ steps:
     dockerComposeFile: '**/docker-compose.yml'
     action: 'Run a Docker Compose command'
     qualifyImageNames: true
-    dockerComposeCommand: up -d
+    dockerComposeCommand: 'up'
 
 - task: CopyFiles@2
   inputs:
